@@ -76,7 +76,7 @@ export default function LeadGenAgency() {
       <section id="about" className="max-w-4xl mx-auto mb-20 animate-slideUp px-4 text-center">
         <h2 className="text-3xl sm:text-4xl font-bold text-sky-700 mb-6">About Us</h2>
         <p className="text-lg text-gray-700 mb-6">
-          We are a passionate team of data professionals dedicated to helping B2B companies grow through targeted lead generation and expert data handling. With over 25 lakh validated emails and a skilled research team, we serve clients across the globe.
+          We are a passionate team of data professionals dedicated to helping B2B companies grow through targeted lead generation and expert data handling.
         </p>
         <h3 className="text-xl sm:text-2xl font-semibold text-sky-600 mt-8 mb-2">🚀 Our Mission</h3>
         <p className="text-gray-700">To provide high-quality, verified business leads and email outreach services that help companies connect with their ideal clients and grow efficiently.</p>
