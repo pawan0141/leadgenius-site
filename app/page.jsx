@@ -1,8 +1,8 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { Button } from "../components/ui/button";
-import { Card, CardContent } from "../components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 import { ArrowUp } from "lucide-react";
 
 export default function LeadGenAgency() {
@@ -46,9 +46,15 @@ export default function LeadGenAgency() {
         "Mining targeted data from public sources, directories, databases, and more."
     },
     {
-      title: "🔊 Online & Offline Data Entry",
+      title: "🖊️ Online & Offline Data Entry",
       description:
         "Accurate and efficient data entry services for digital and scanned sources."
+    },
+    {
+      title: "📊 Data Analysis & Visualization",
+      description:
+        "We transform raw data into actionable insights using advanced analytics and create interactive dashboards to help you make data-driven decisions.",
+      pricing: "Custom pricing based on project complexity"
     }
   ];
 
@@ -69,7 +75,7 @@ export default function LeadGenAgency() {
       <section id="home" className="text-center mb-16 animate-fadeIn px-4 max-w-3xl">
         <h1 className="text-4xl sm:text-5xl font-extrabold mb-4 text-sky-700">B2B Lead Generation & Email Outreach</h1>
         <p className="text-lg sm:text-xl text-gray-600">
-          Helping businesses across the globe reach decision-makers with verified leads, email campaigns, and deep internet research.
+          Helping businesses across the globe reach decision-makers with verified leads, email campaigns, and deep research.
         </p>
       </section>
 
@@ -129,4 +135,3 @@ export default function LeadGenAgency() {
     </div>
   );
 }
-
