@@ -1,8 +1,6 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { Button } from "../components/ui/button";
-import { Card, CardContent } from "../components/ui/card";
 import { ArrowUp } from "lucide-react";
 
 export default function LeadGenAgency() {
@@ -96,13 +94,11 @@ export default function LeadGenAgency() {
         <h2 className="text-3xl sm:text-4xl font-bold text-center text-sky-700 mb-10">Our Services</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, i) => (
-            <Card key={i} className="shadow-xl border-2 border-sky-100 hover:scale-105 transition-transform">
-              <CardContent className="p-6">
-                <h3 className="text-xl sm:text-2xl font-bold mb-2 text-sky-800">{service.title}</h3>
-                <p className="text-gray-700 mb-3">{service.description}</p>
-                {service.pricing && <p className="text-sky-700 font-medium text-sm">{service.pricing}</p>}
-              </CardContent>
-            </Card>
+            <div key={i} className="bg-white border-2 border-sky-100 rounded-xl p-6 shadow-xl hover:scale-105 transition-transform">
+              <h3 className="text-xl sm:text-2xl font-bold mb-2 text-sky-800">{service.title}</h3>
+              <p className="text-gray-700 mb-3">{service.description}</p>
+              {service.pricing && <p className="text-sky-700 font-medium text-sm">{service.pricing}</p>}
+            </div>
           ))}
         </div>
       </section>
@@ -114,7 +110,7 @@ export default function LeadGenAgency() {
           <input type="text" name="name" placeholder="Your Name" className="p-3 border border-gray-300 rounded-lg" required />
           <input type="email" name="email" placeholder="Your Email" className="p-3 border border-gray-300 rounded-lg" required />
           <textarea name="message" placeholder="How can we help you?" className="p-3 border border-gray-300 rounded-lg" rows={5} required></textarea>
-          <Button className="py-3 bg-sky-700 text-white text-lg hover:bg-sky-800 rounded-xl shadow">Submit</Button>
+          <button type="submit" className="py-3 bg-sky-700 text-white text-lg hover:bg-sky-800 rounded-xl shadow">Submit</button>
         </form>
         <div className="text-center text-sm text-gray-500 mt-8">
           <p>Email us at <a href="mailto:pwnsat0141@gmail.com" className="text-sky-700 underline">pwnsat0141@gmail.com</a></p>
