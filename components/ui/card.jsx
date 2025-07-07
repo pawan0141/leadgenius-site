@@ -1,8 +1,17 @@
+"use client";
+
 export function Card({ children, className = "" }) {
-  return <div className={`bg-white rounded-2xl overflow-hidden ${className}`}>{children}</div>;
+  return (
+    <div className={`rounded-xl bg-white shadow-md ${className}`}>
+      {children}
+    </div>
+  );
 }
 
 export function CardContent({ children, className = "" }) {
-  return <div className={`p-6 ${className}`}>{children}</div>;
+  return (
+    <div className={`p-4 ${className}`}>
+      {children}
+    </div>
+  );
 }
-
