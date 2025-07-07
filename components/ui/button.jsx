@@ -1,7 +1,9 @@
+"use client";
+
 export function Button({ children, className = "", ...props }) {
   return (
     <button
-      className={`bg-sky-700 hover:bg-sky-800 text-white font-semibold py-2 px-4 rounded-xl transition ${className}`}
+      className={`px-4 py-2 rounded-md bg-sky-700 text-white hover:bg-sky-800 transition ${className}`}
       {...props}
     >
       {children}
