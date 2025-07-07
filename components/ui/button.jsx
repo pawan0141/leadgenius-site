@@ -1,8 +1,13 @@
-export function Button({ children, className = "", ...props }) {
+export function Card({ children, className = "" }) {
   return (
-    <button className={`px-4 py-2 rounded bg-blue-600 text-white hover:bg-blue-700 ${className}`} {...props}>
+    <div className={`rounded-xl bg-white border p-4 shadow ${className}`}>
       {children}
-    </button>
+    </div>
   );
 }
+
+export function CardContent({ children, className = "" }) {
+  return <div className={className}>{children}</div>;
+}
+
 
