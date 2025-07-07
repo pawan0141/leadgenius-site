@@ -1,17 +1,16 @@
-"use client";
-
-export function Card({ children, className = "" }) {
+export function Card({ children, className = "", ...props }) {
   return (
-    <div className={`rounded-xl bg-white shadow-md ${className}`}>
+    <div className={`rounded-xl border p-4 shadow ${className}`} {...props}>
       {children}
     </div>
   );
 }
 
-export function CardContent({ children, className = "" }) {
+export function CardContent({ children, className = "", ...props }) {
   return (
-    <div className={`p-4 ${className}`}>
+    <div className={`text-gray-800 ${className}`} {...props}>
       {children}
     </div>
   );
 }
+
