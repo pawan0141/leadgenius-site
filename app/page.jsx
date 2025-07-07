@@ -69,7 +69,7 @@ export default function LeadGenAgency() {
       <section id="home" className="text-center mb-16 animate-fadeIn px-4 max-w-3xl">
         <h1 className="text-4xl sm:text-5xl font-extrabold mb-4 text-sky-700">B2B Lead Generation & Email Outreach</h1>
         <p className="text-lg sm:text-xl text-gray-600">
-          Helping businesses across the globe reach decision-makers with verified leads, email campaigns, and deep research.
+          Helping businesses across the globe reach decision-makers with verified leads, email campaigns, and deep internet research.
         </p>
       </section>
 
