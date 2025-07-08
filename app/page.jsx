@@ -18,7 +18,7 @@ export default function LeadGenAgency() {
   const scrollToTop = () => window.scrollTo({ top: 0 });
 
   const services = [
-    {
+       {
       title: "🔍 Custom B2B Lead Lists",
       description:
         "Targeted, validated leads by industry, title, region. Includes email, phone, company details.",
@@ -55,6 +55,21 @@ export default function LeadGenAgency() {
       description:
         "We transform raw data into actionable insights using advanced analytics and create interactive dashboards to help you make data-driven decisions.",
       pricing: "Custom pricing based on project complexity"
+    },
+    {
+      title: "🎯 Ideal Client Prospect Lists",
+      description:
+        "Hyper-targeted lists tailored for SaaS startups, EdTech, marketing agencies, and email marketers to help them scale outreach."
+    },
+    {
+      title: "🎓 Verified Leads for EdTech",
+      description:
+        "Emails and contact data of verified school/college teachers across geographies to help EdTech firms pitch their services."
+    },
+    {
+      title: "🤝 Lead Partnerships for Agencies",
+      description:
+        "White-label research and email sourcing support for lead-gen and marketing agencies."
     }
   ];
 
